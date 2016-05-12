@@ -11,6 +11,13 @@ export function parseVat(str) {
   return numericEnterpriseNumber
 }
 
+export function formatVat(vatNumber) {
+  const strVatNumber = _trim(vatNumber)
+  const prefixedVatNumber = (strVatNumber === '') ? '_' : `0${strVatNumber}`
+  const suffixedVatNumber = _padEnd(`${prefixedVatNumber}`, 10, '_')
+  return suffixedVatNumber.replace(/^([0-9_]{4})([0-9_]{3})([0-9_]{3})$/, 'BE$1.$2.$3')
+}
+
 export function formatVatCommunication(vatNumber, separator = '/') {
   const strVatNumber = _trim(vatNumber)
   const prefixedVatNumber = (strVatNumber === '') ? '_' : `0${strVatNumber}`

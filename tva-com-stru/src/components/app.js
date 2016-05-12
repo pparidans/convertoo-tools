@@ -18,7 +18,7 @@ const App = React.createClass({
             <form>
               <fieldset class="form-group">
                 <label htmlFor="enterprise-number" className="control-label">Numéro d'entreprise</label>
-                <input type="text" id="enterprise-number" value={enterpriseNumber} onChange={this.setEnterpriseNumber} placeholder="BE00.0000.0000" className="form-control input-lg" maxLength="14" />
+                <input type="text" id="enterprise-number" value={enterpriseNumber} onChange={this.setEnterpriseNumber} placeholder="BE0000.000.000" className="form-control input-lg text-center" maxLength="14" />
               </fieldset>
             </form>
           </div>
