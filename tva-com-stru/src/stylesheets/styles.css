@@ -1,0 +1,21 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+body {
+  margin-top: 20px;
+}
+
+.control-label {
+  font-size: 1.5em;
+}
+
+.result {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+/* Customize container */
+/*@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}*/
